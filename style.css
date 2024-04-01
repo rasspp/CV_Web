@@ -1,0 +1,296 @@
+:root {
+   --primary-color: #03045e;
+   --text-primary-color: #90e0ef;
+   /* --primary-color: #0077b6;
+   --text-primary-color: #03045e; */
+}
+
+::selection {
+   background-color: var(--primary-color);
+   color: white;
+}
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(33, 20, 68) !important;
+   position: relative;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+.container {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   max-width: 950px !important;
+   margin: 50px 0px 50px 50px !important;
+   padding: 0px !important;
+   border: 2px solid white;
+   overflow: hidden;
+   background-color: white;
+}
+
+.navbar {
+   background: var(--primary-color);
+   border-bottom: 2px solid white;
+   border-left: 2px solid white;
+   display: flex;
+   justify-content: center !important;
+   align-items: center !important;
+   flex-direction: column !important;
+   padding: 10px;
+   right: 0 !important;
+   padding-right: 50 !important;
+   padding-left: 50px !important;
+   top: 0 !important;
+   position: fixed !important;
+   gap: 20px;
+   border-bottom-left-radius: 80px;
+   text-align: end;
+}
+
+.language-button {
+   margin: 10px 20px;
+   color: white;
+}
+.language-button button {
+   color: white;
+   width: 100px;
+   margin-bottom: 20px;
+   padding: 5px 0;
+   background-color: var(--primary-color);
+   font-weight: bold;
+}
+
+.navbar a {
+   color: var(--primary-color);
+   background-color: #fff;
+   border: 2px solid white;
+   padding: 5px 12px;
+   margin-right: 3px !important;
+   border-radius: 4px;
+   font-weight: bold;
+   text-decoration: none;
+   text-wrap: nowrap;
+}
+.navbar a:hover {
+   background-color: var(--primary-color);
+   color: white;
+}
+.navbar a:active {
+   color: var(--primary-color);
+   background-color: white;
+}
+
+.container-content {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+header {
+   display: flex;
+   align-items: start;
+   justify-content: space-evenly;
+   margin-bottom: 100px !important;
+   padding-top: 50px;
+   padding-bottom: 30px;
+   width: 100%;
+   background-color: var(--primary-color);
+}
+
+header img {
+   width: 45%;
+}
+header > div {
+   width: 55%;
+}
+
+section {
+   width: 100%;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-bottom: 50px;
+}
+.tentang-saya {
+   width: 100%;
+}
+.tentang-saya p {
+   text-align: justify;
+}
+.tentang-saya .p-2 {
+   height: 100px;
+}
+section h3 {
+   color: #666;
+   font-size: 18px;
+}
+section.form {
+   width: 100%;
+   margin-top: 150px;
+   display: flex;
+   justify-content: center;
+   padding-top: 20px;
+   margin-bottom: 0;
+   padding-bottom: 20px;
+}
+
+form {
+   width: 90%;
+   background-color: var(--primary-color);
+   padding: 20px;
+   border-radius: 7px;
+   color: white !important;
+}
+form button {
+   background-color: white !important;
+   color: var(--primary-color) !important;
+   font-weight: bold !important  ;
+}
+.skills-container {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 20px;
+   color: var(--primary-color);
+}
+.komentar {
+   color: white;
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 25px;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.image {
+   width: 230px;
+   height: 230px;
+   border: 5px solid var(--text-primary-color);
+   border-radius: 50%;
+   margin-left: 50px;
+}
+
+.judul-header {
+   font-size: 50px;
+   color: white;
+   margin: 0;
+   margin-top: 50px;
+}
+
+.teks-header {
+   color: var(--text-primary-color);
+   font-weight: bold;
+   border-left: 2px solid var(--text-primary-color);
+   border-bottom: 2px solid var(--text-primary-color);
+   padding-bottom: 5px;
+   padding-left: 10px;
+   margin: 0;
+   margin-left: 20px;
+   font-size: 16px;
+   margin-bottom: 5px;
+}
+.teks-header:last-child {
+   margin-left: 40px;
+}
+
+.judul-section {
+   font-size: 28px;
+   color: var(--primary-color);
+   margin-bottom: 10px;
+   padding: 5px;
+   border-left: 2px solid var(--primary-color);
+   padding-left: 10px;
+}
+.judul-section.active {
+   background-color: var(--primary-color);
+   border-left: 2px solid white;
+   color: white;
+}
+
+.teks-section,
+.teks-list {
+   font-size: 16px;
+   color: var(--primary-color) !important;
+   line-height: 1.5;
+   margin-bottom: 10px;
+}
+
+#pengalaman .p-1 {
+   height: 100px;
+}
+#pengalaman .p-2 {
+   height: 185px;
+}
+
+ul li .title-date {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+ul li .title-date h3 {
+   color: var(--primary-color);
+}
+ul li .title-date h4 {
+   font-size: 15px;
+   color: var(--primary-color);
+}
+ul li p {
+   color: var(--primary-color);
+}
+.text-indent {
+   text-indent: 20px;
+}
+
+.komentar-section {
+   background-color: var(--primary-color);
+   margin: auto;
+   margin-top: 50px;
+   padding-top: 20px;
+   width: 80%;
+   border-radius: 7px;
+   padding-bottom: 50px;
+   margin-bottom: 50px;
+}
+.komentar-section h2 {
+   color: white;
+   text-align: center;
+   margin-bottom: 50px;
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.komentar-section h3 {
+   background-color: white;
+   border-radius: 7px;
+   text-align: center;
+   width: 100px;
+   font-weight: bold;
+   color: var(--primary-color);
+   padding: 10px;
+   margin-left: 10px;
+}
+.komentar-section p {
+   background-color: white;
+   padding: 10px;
+   font-weight: bold;
+   padding-left: 20px;
+   color: #666;
+   border-radius: 7px;
+   border: 2px solid var(--primary-color);
+   margin-top: -15px;
+}
+.komentar-section .tidak-ada-komentar {
+   background-color: white;
+   padding: 10px;
+   font-weight: bold;
+   padding-left: 20px;
+   color: #666;
+   border-radius: 7px;
+   border: 2px solid var(--primary-color);
+   margin-top: -15px;
+   text-align: center;
+}
